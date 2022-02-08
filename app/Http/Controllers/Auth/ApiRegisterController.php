@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers\Auth;
 use App\Models\User;
-// use App\Wallet;
+use App\Models\Wallet;
+use App\Models\User_detail;
+
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
