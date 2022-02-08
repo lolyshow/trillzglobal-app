@@ -163,4 +163,11 @@ class AuthController extends Controller
         return $this->createNewToken(auth()->refresh());
     }
     
+
+    public function userProfile() {
+
+        $user = User::join('user_details','users.id','user_details.user_id')->first();
+
+        return reponse()->json($user);
+    }
 }
