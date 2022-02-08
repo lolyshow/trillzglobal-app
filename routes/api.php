@@ -28,5 +28,5 @@ Route::group(['middleware' => 'api','prefix' => 'auth'], function ($router) {
     Route::post('/logout', [AuthController::class, 'logout']);
     Route::post('/refresh', [AuthController::class, 'refresh']);
     Route::get('/user-profile', [AuthController::class, 'userProfile']);   
-    Route::get('/wallet-transfer', [WalletController::class, 'walletToWallet']); 
+    Route::post('/wallet-transfer', [WalletController::class, 'walletToWallet']); 
 });
